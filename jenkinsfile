@@ -3,21 +3,16 @@ node {
         git branch: 'main', url: 'https://github.com/rohan848382/terraform_CICD'
     }
     stage('init') {
-        dir('Day-1'){
             sh 'terraform init'
-        }
     }
     
      stage('plan') {
-        dir('Day-1'){
             sh 'terraform plan'
-        }
+        
     }
     
      stage('apply') {
-        dir('Day-1'){
             sh 'terraform apply -auto-approve'
-        }
     }
     
      
