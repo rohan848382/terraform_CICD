@@ -1,6 +1,6 @@
 node {
     stage('clone') { 
-        git branch: 'main', url: 'https://github.com/rohan848382/terraform.git'
+        git branch: 'main', url: 'https://github.com/rohan848382/terraform_CICD'
     }
     stage('init') {
         dir('Day-1'){
