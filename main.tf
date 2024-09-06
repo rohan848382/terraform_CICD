@@ -5,7 +5,7 @@ resource "aws_instance" "dev" {
   key_name               = "public"
 
 tags = {
-Name = "Dev"
+Name = "rahul"
 }
   
 }
